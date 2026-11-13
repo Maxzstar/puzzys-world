@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141410">
+  <meta name="description" content="Check patch notes, download availability, and contact details for Puzzy’s World.">
+  <title>Puzzy’s World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=IBM+Plex+Mono:wght@500;600&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <svg class="icons" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="puzzle-icon" viewBox="0 0 24 24"><path d="M4 4h5a3 3 0 1 1 6 0h5v5a3 3 0 1 0 0 6v5h-5a3 3 0 1 0-6 0H4v-5a3 3 0 1 0 0-6Z"/></symbol>
+    <symbol id="download-icon" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/></symbol>
+    <symbol id="mail-icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+    <symbol id="notes-icon" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6Zm8 0v5h4M9 12h6m-6 4h6"/></symbol>
+    <symbol id="arrow-icon" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="lock-icon" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 1 1 8 0v4"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top"><span class="brand-mark"><svg><use href="#puzzle-icon"/></svg></span>Puzzy’s World</a>
+      <nav aria-label="Main navigation">
+        <a href="#patches">Patches</a>
+        <a href="#download">Download</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="status"><span></span> In development</span>
+        <h1 id="hero-title">Puzzy’s<br>World<span>.</span></h1>
+        <p>A horror game in development. Check back for patch notes and the download when it launches.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#download"><svg><use href="#download-icon"/></svg> Download status</a>
+          <a class="text-link" href="#patches">See patch notes <svg><use href="#arrow-icon"/></svg></a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="world.webp" alt="A half-open door spills yellow light into a dark corridor" width="1254" height="1254" fetchpriority="high">
+        <span class="art-label">Concept art</span>
+      </div>
+    </section>
+
+    <div class="info-grid">
+      <section class="card patches" id="patches" aria-labelledby="patch-title">
+        <span class="card-icon"><svg><use href="#notes-icon"/></svg></span>
+        <h2 id="patch-title">Patch notes</h2>
+        <div class="patch-entry">
+          <h3>No patches yet</h3>
+          <p>Game updates will appear here as they’re released.</p>
+        </div>
+      </section>
+
+      <section class="card download" id="download" aria-labelledby="download-title">
+        <span class="card-icon"><svg><use href="#download-icon"/></svg></span>
+        <h2 id="download-title">Download</h2>
+        <p>The game isn’t out yet. The download will be available here after release.</p>
+        <button class="button unavailable" type="button" disabled><svg><use href="#lock-icon"/></svg> Coming soon</button>
+      </section>
+
+      <section class="card contact" id="contact" aria-labelledby="contact-title">
+        <span class="card-icon"><svg><use href="#mail-icon"/></svg></span>
+        <h2 id="contact-title">Get in touch</h2>
+        <p>Have a question or an idea for Puzzy’s World? Send me a message.</p>
+        <a class="button secondary" href="mailto:Maxzstar1@outlook.com?subject=Puzzy%27s%20World"><svg><use href="#mail-icon"/></svg> Email me</a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="wrap site-footer">
+    <span>Puzzy’s World</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>

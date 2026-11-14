@@ -100,8 +100,6 @@ h2 { font-size: 2.35rem; line-height: 1.05; }
 .patch-entry p { margin: 4px 0 0; }
 .secondary { border-color: #897322; color: var(--yellow); }
 .secondary:hover { background: #302811; border-color: var(--yellow); }
-.unavailable { border-color: #514a31; background: #29261b; color: #c6bb85; cursor: not-allowed; }
-.unavailable svg { width: 17px; height: 17px; }
 
 .site-footer { display: flex; justify-content: space-between; gap: 16px; margin-top: 40px; padding-block: 24px; border-top: 1px solid var(--line); color: var(--muted); font: 500 .72rem/1.4 var(--mono); text-transform: uppercase; }
 

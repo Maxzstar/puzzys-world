@@ -120,3 +120,33 @@ h2 { font-size: 2.35rem; line-height: 1.05; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-copy { animation: hero-entrance 650ms ease-out both; }
+  .hero-art { animation: hero-entrance 850ms 90ms ease-out both; }
+  .hero-art img { animation: corridor-glow 4s 250ms ease-in-out; }
+
+  .button {
+    transition: transform 180ms ease-out, box-shadow 180ms ease-out,
+      background-color 180ms ease-out, border-color 180ms ease-out;
+  }
+  .button:is(:hover, :focus-visible) {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 18px #ffdf242e;
+  }
+  .button:active { transform: translateY(0); }
+  .text-link svg { transition: transform 180ms ease-out; }
+  .text-link:is(:hover, :focus-visible) svg { transform: translateX(4px); }
+}
+
+@keyframes hero-entrance {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes corridor-glow {
+  0%, 100% { filter: brightness(1); }
+  30% { filter: brightness(1.23); }
+  53% { filter: brightness(.93); }
+  72% { filter: brightness(1.13); }
+}
